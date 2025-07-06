@@ -1,0 +1,139 @@
+:root {
+  --primary-color: #f37021;
+  --secondary-color: #222222;
+  --white-color: #ffffff;
+  --focus-color: #0055ff;
+  --font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  background-color: #f5f5f5;
+  color: var(--secondary-color);
+}
+
+header {
+  background-color: var(--white-color);
+  border-bottom: 3px solid var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  height: 50px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-weight: 700;
+}
+
+nav a:hover,
+nav a:focus {
+  outline: 3px solid var(--focus-color);
+  outline-offset: 3px;
+}
+
+main {
+  padding: 2rem;
+}
+
+.detalle {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  background-color: var(--white-color);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 1rem;
+}
+
+.imagenes {
+  flex: 1 1 400px;
+}
+
+.imagenes img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.galeria {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.galeria img {
+  width: 100px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.info {
+  flex: 1 1 300px;
+}
+
+.info h1 {
+  margin-top: 0;
+  color: var(--primary-color);
+}
+
+.precio {
+  font-weight: 700;
+  margin-top: 0.5rem;
+  color: var(--secondary-color);
+}
+
+.descripcion {
+  margin: 1rem 0;
+}
+
+.caracteristicas {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
+}
+
+.caracteristicas li {
+  background-color: #eee;
+  border-radius: 8px;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 50px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover,
+button:focus {
+  background-color: var(--focus-color);
+  outline: none;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--white-color);
+  border-top: 3px solid var(--primary-color);
+  margin-top: 2rem;
+}

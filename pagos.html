@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tu Refugio - Pasarela de Pagos</title>
+  <link rel="stylesheet" href="pagos.css" />
+</head>
+<body>
+  <header>
+    <img src="logo tu refugio-modified.png" alt="" />
+    <h1>Pasarela de Pagos</h1>
+  </header>
+
+  <main>
+    <section class="payment-instructions">
+      <h2>Finaliza tu pago</h2>
+      <p>Revisa los datos de tu reserva antes de completar el pago seguro.</p>
+    </section>
+
+    <form class="payment-form">
+      <fieldset>
+        <legend>Información de la tarjeta</legend>
+        <label for="cardnumber">Número de tarjeta</label>
+        <input type="text" id="cardnumber" name="cardnumber" placeholder="XXXX-XXXX-XXXX-XXXX" required />
+
+        <label for="name">Nombre en la tarjeta</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="expiry">Fecha de vencimiento</label>
+        <input type="text" id="expiry" name="expiry" placeholder="MM/AA" required />
+
+        <label for="cvc">CVC</label>
+        <input type="text" id="cvc" name="cvc" required />
+      </fieldset>
+
+      <button type="submit">Pagar ahora</button>
+    </form>
+  </main>
+</body>
+</html>

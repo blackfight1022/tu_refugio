@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reservar Alojamiento - Tu Refugio</title>
+  <link rel="stylesheet" href="reserva.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <img src="logo tu refugio-modified.png" alt="" class="logo"/>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="exploracion.html">Explorar</a></li>
+          <li><a href="panel.html">Mi Panel</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="reserva">
+      <h1>Reserva tu alojamiento</h1>
+      <form>
+        <label for="nombre">Nombre completo</label>
+        <input type="text" id="nombre" name="nombre" required/>
+
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" required/>
+
+        <label for="telefono">Teléfono</label>
+        <input type="tel" id="telefono" name="telefono" required/>
+
+        <label for="checkin">Fecha de llegada</label>
+        <input type="date" id="checkin" name="checkin" required/>
+
+        <label for="checkout">Fecha de salida</label>
+        <input type="date" id="checkout" name="checkout" required/>
+
+        <label for="personas">Número de personas</label>
+        <input type="number" id="personas" name="personas" min="1" required/>
+
+        <label for="pago">Método de pago</label>
+        <select id="pago" name="pago" required>
+          <option value="">Seleccione</option>
+          <option value="tarjeta">Tarjeta de crédito</option>
+          <option value="transferencia">Transferencia bancaria</option>
+        </select>
+
+        <button type="submit">Confirmar reserva</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p></p>
+  </footer>
+</body>
+</html>

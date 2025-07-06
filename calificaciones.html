@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tu Refugio - Calificaciones y Opiniones</title>
+  <link rel="stylesheet" href="calificaciones.css" />
+</head>
+<body>
+  <header>
+    <img src="logo tu refugio-modified.png" alt="" />
+    <h1>Calificaciones y Opiniones</h1>
+  </header>
+
+  <main>
+    <section class="opiniones">
+      <h2>Opiniones de nuestros huéspedes</h2>
+      <article>
+        <h3>María G.</h3>
+        <p>⭐⭐⭐⭐⭐</p>
+        <p>Excelente experiencia, anfitrión amable y alojamiento muy cómodo.</p>
+      </article>
+      <article>
+        <h3>Pedro R.</h3>
+        <p>⭐⭐⭐⭐</p>
+        <p>Todo correcto, buena ubicación y atención rápida.</p>
+      </article>
+    </section>
+
+    <section class="nueva-opinion">
+      <h2>Deja tu opinión</h2>
+      <form>
+        <label for="name">Nombre</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="rating">Calificación</label>
+        <select id="rating" name="rating" required>
+          <option value="">Selecciona</option>
+          <option value="5">5 estrellas</option>
+          <option value="4">4 estrellas</option>
+          <option value="3">3 estrellas</option>
+          <option value="2">2 estrellas</option>
+          <option value="1">1 estrella</option>
+        </select>
+
+        <label for="comment">Comentario</label>
+        <textarea id="comment" name="comment" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

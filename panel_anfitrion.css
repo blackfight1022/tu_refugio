@@ -1,0 +1,82 @@
+:root {
+  --primary-color: #f26c28;
+  --secondary-color: #333333;
+  --background-color: #f4f4f4;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--background-color);
+  color: var(--secondary-color);
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem;
+}
+header img {
+  height: 40px;
+}
+.host-nav {
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+}
+.host-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.host-nav li {
+  margin: 0;
+}
+.host-nav a {
+  display: block;
+  padding: 1rem;
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+.host-nav a:hover,
+.host-nav a:focus {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+main {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+.welcome h2 {
+  color: var(--primary-color);
+}
+.summary {
+  margin-top: 2rem;
+}
+.summary-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.summary-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1rem;
+  flex: 1 1 200px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.summary-card h4 {
+  margin-top: 0;
+}
+.summary-card p {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
+}

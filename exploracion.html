@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Explora Alojamientos - Tu Refugio</title>
+  <link rel="stylesheet" href="exploracion.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <img src="logo.png" alt="" class="logo" />
+      <nav>
+        <ul>
+          <li><a href="/1_pagina principal/pagina de inico.html">Inicio</a></li>
+          <li><a href="/2_Registro de usuario/registro de usuario.html">Registrarse</a></li>
+          <li><a href="/3_iniciar sesion/login.html">Iniciar sesión</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="explorar">
+      <h1>Explora Alojamientos</h1>
+      <form class="filtros">
+        <label for="destino">Destino:</label>
+        <input type="text" id="destino" name="destino" placeholder="Bogota" />
+
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha" name="fecha" />
+
+        <label for="tipo">Tipo de alojamiento:</label>
+        <select id="tipo" name="tipo">
+          <option value="">Todos</option>
+          <option value="apartamento">Apartamento</option>
+          <option value="cabaña">Cabaña</option>
+          <option value="casa">Casa</option>
+        </select>
+
+        <button type="submit">Buscar</button>
+      </form>
+      <div class="listado">
+        <!-- tarjetas de alojamientos -->
+        <div class="tarjeta">
+          <img src="cabaña.jpg" alt="Cabaña en el bosque" />
+          <h2>Cabaña en el bosque</h2>
+          <p>Desde $120.000 COP/noche</p>
+          <button>Ver detalle</button>
+        </div>
+        <div class="tarjeta">
+          <img src="apt.jpg" alt="Apartamento moderno" />
+          <h2>Apartamento moderno</h2>
+          <p>Desde $200.000 COP/noche</p>
+          <button>Ver detalle</button>
+        </div>
+        <!-- más alojamientos... -->
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p></p>
+  </footer>
+</body>
+</html>
